@@ -1,0 +1,54 @@
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+button {
+  width: 45px;
+  height: 45px;
+  margin: 7px;
+  font-size: 25px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+.num {
+  background: #4e837c;
+  /* Muted Teal */
+  color: #ffffff;
+}
+
+/* Operator Buttons (+, -, *, /, ^, %) */
+.operator {
+  background: #ff9500;
+  /* Bright Orange */
+  color: #ffffff;
+}
+
+/* Equals Button (=) */
+.equals {
+  background: #ff3b30;
+  /* Red */
+  color: #ffffff;
+}
+
+/* Clear Button (C) */
+.clear {
+  background: #4a6651;
+  /* Darker Teal */
+  color: #ffffff;
+}
+
+/* Hover Effects */
+.button:hover {
+  filter: brightness(1.2);
+}
+
+/* Active (Pressed) Effect */
+.button:active {
+  transform: scale(0.95);
+}
