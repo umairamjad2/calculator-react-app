@@ -27,17 +27,16 @@ const ButtonContainer = ({ onButtonClick }) => {
   return (
     <div className={styles.buttonContainer}>
       {ButtonNames.map((buttonName) => {
-        // Determine button class based on button name
         let buttonClass = styles.button;
 
         if (!isNaN(buttonName) || buttonName === "00" || buttonName === ".") {
-          buttonClass += ` ${styles.num}`; // Number buttons
+          buttonClass += ` ${styles.num}`;
         } else if (["+", "-", "*", "/", "^", "%"].includes(buttonName)) {
-          buttonClass += ` ${styles.operator}`; // Operator buttons
+          buttonClass += ` ${styles.operator}`;
         } else if (buttonName === "=") {
-          buttonClass += ` ${styles.equals}`; // Equals button
+          buttonClass += ` ${styles.equals}`;
         } else if (buttonName === "C") {
-          buttonClass += ` ${styles.clear}`; // Clear button
+          buttonClass += ` ${styles.clear}`;
         }
 
         return (
